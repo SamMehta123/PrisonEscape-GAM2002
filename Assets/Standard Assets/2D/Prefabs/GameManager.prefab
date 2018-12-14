@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1986026955676042}
+  m_IsPrefabAsset: 1
+--- !u!1 &1986026955676042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4007727213700022}
+  - component: {fileID: 114028214878290418}
+  - component: {fileID: 114526617377511874}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4007727213700022
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1986026955676042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.14089987, y: 0.86, z: -0.046875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114028214878290418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1986026955676042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd283362c83b5d44a9307ec77b2a7499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelStartDelay: 2
+  turnDelay: 0.1
+  boardScript: {fileID: 114526617377511874}
+  playersTurn: 1
+--- !u!114 &114526617377511874
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1986026955676042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b13c3388973f043bda33990401b61c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 8
+  rows: 8
+  wallCount:
+    minimum: 5
+    maximum: 9
+  coinCount:
+    minimum: 1
+    maximum: 5
+  Door: {fileID: 1719762583811746, guid: c77a4608029d34711b111b0ff27fbefc, type: 2}
+  floorTiles:
+  - {fileID: 1001579921150646, guid: da81323e5f15c4a1993d2044fb932760, type: 2}
+  wallTiles:
+  - {fileID: 1019943811519204, guid: 17f898f01dcc545a69cc2a99b7d87c0a, type: 2}
+  WardenKeyTiles:
+  - {fileID: 1745631605468514, guid: e85d62c5dcf2f426f98d671684d39e50, type: 2}
+  CoinTiles:
+  - {fileID: 1214746389839136, guid: a8a455abe99d0ff489713454d3a36fb6, type: 2}
+  enemyTiles:
+  - {fileID: 1500562290222868, guid: c39035534895fa943a484573d849261f, type: 2}
+  outerWallTiles:
+  - {fileID: 1977983149411058, guid: 8226abc5a6df0491fb45580deaf60bbd, type: 2}
+  NumberOfEnemiesToSpawn: 4
+  NumberOfCoinToSpawn: 6
+  NumberOfWardenKeyToSpawn: 1
